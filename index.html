@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css' integrity='sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ==' crossorigin='anonymous'/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
+</head>
+<body>
+
+    <div class="wrap">
+       <header>
+        <select class="select" id="font">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+        <select id="fontSizeBtn">
+            <option value="12">12px</option>
+            <option value="16" selected>16px</option>
+            <option value="20">20px</option>
+            <option value="24">24px</option>
+          </select>
+
+        <input type="color" id="colorPicker" value="#000000">
+
+        <button class="btn" id="boldBtn">B</button>
+        <button class="btn" id="italicBtn">i</button>
+        <button class="btn" id="underlineBtn">u</button>
+        <button class="btn" id="musicBtn"><i class="fa-solid fa-music"></i></button>
+    </header>
+    <div class="compilatorContainer">
+    <div class="editContainer">
+        <h3>Html</h3>
+        <textarea name="" id="htmlArea"></textarea> 
+        <h3>CSS</h3>
+        <textarea name="" id="cssArea"></textarea> 
+        <h3>JavaScript</h3>
+        <textarea name="" id="jsArea"></textarea> 
+    </div>
+        <div class="result">
+        <p id="text">
+             
+        </p> 
+        </div>
+    </div> 
+</div>
+    <script src="./main.js"></script>
+</body>
+</html>
